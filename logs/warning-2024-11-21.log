@@ -1,0 +1,2 @@
+WARNING 2024-11-21 13:31:43,777C:\about git\pytest-auto-api2\logs\warning-2024-11-21.log:dependent_case.py:134 检查到数据库开关为关闭状态，请确认配置
+WARNING 2024-11-21 13:31:48,046C:\about git\pytest-auto-api2\logs\warning-2024-11-21.log:conftest.py:118 跳过用例数: 2

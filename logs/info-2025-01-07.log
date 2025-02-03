@@ -1,0 +1,22 @@
+INFO    2025-01-07 16:17:30,752C:\about git\pytest-auto-api2\logs\info-2025-01-07.log:log_decorator.py:42 
+======================================================
+用例标题: 未登录状态下新增收藏网址
+请求路径: https://www.wanandroid.com/lg/collect/addtool/json
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'multipart/form-data; boundary=f4103b15daef4755ba53a35b8f39897a', 'Content-Length': '281'}
+请求内容: {'name': '自动生成收藏网址4169', 'link': 'https://gitee.com/yu_xiao_qi/pytest-auto-api2'}
+接口响应内容: {"errorCode":-1001,"errorMsg":"请先登录！"}
+接口响应时长: 155 ms
+Http状态码: 200
+=====================================================
+INFO    2025-01-07 16:17:47,959C:\about git\pytest-auto-api2\logs\info-2025-01-07.log:log_decorator.py:42 
+======================================================
+用例标题: 未登录状态下新增收藏网址
+请求路径: https://www.wanandroid.com/lg/collect/addtool/json
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'multipart/form-data; boundary=2b8d22178a8c4152846e073f4f4d69b4', 'Content-Length': '281'}
+请求内容: {'name': '自动生成收藏网址3217', 'link': 'https://gitee.com/yu_xiao_qi/pytest-auto-api2'}
+接口响应内容: {"errorCode":-1001,"errorMsg":"请先登录！"}
+接口响应时长: 153 ms
+Http状态码: 200
+=====================================================

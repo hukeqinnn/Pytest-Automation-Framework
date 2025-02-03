@@ -1,0 +1,134 @@
+INFO    2024-11-21 13:31:41,889C:\about git\pytest-auto-api2\logs\info-2024-11-21.log:run.py:23 
+                             _    _         _      _____         _
+              __ _ _ __ (_)  / \  _   _| |_ __|_   _|__  ___| |_
+             / _` | '_ \| | / _ \| | | | __/ _ \| |/ _ \/ __| __|
+            | (_| | |_) | |/ ___ \ |_| | || (_) | |  __/\__ \ |_
+             \__,_| .__/|_/_/   \_\__,_|\__\___/|_|\___||___/\__|
+                  |_|
+                  开始执行xxx项目名称项目...
+                
+INFO    2024-11-21 13:31:43,337C:\about git\pytest-auto-api2\logs\info-2024-11-21.log:log_decorator.py:42 
+======================================================
+用例标题: 正常获取个人身份信息
+请求路径: https://www.wanandroid.com/user/lg/userinfo/json
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'multipart/form-data;', 'cookie': 'JSESSIONID=8287DBD21115D5FB994FC1C5806E4755;'}
+请求内容: None
+接口响应内容: {"errorCode":-1001,"errorMsg":"请先登录！"}
+接口响应时长: 136 ms
+Http状态码: 200
+=====================================================
+INFO    2024-11-21 13:31:43,760C:\about git\pytest-auto-api2\logs\info-2024-11-21.log:log_decorator.py:42 
+======================================================
+用例标题: 未登录状态下新增收藏网址
+请求路径: https://www.wanandroid.com/lg/collect/addtool/json
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'multipart/form-data; boundary=0105620b46ff4186ba4788e893128a55', 'Content-Length': '281'}
+请求内容: {'name': '自动生成收藏网址1013', 'link': 'https://gitee.com/yu_xiao_qi/pytest-auto-api2'}
+接口响应内容: {"errorCode":-1001,"errorMsg":"请先登录！"}
+接口响应时长: 136 ms
+Http状态码: 200
+=====================================================
+INFO    2024-11-21 13:31:45,923C:\about git\pytest-auto-api2\logs\info-2024-11-21.log:log_decorator.py:42 
+======================================================
+用例标题: 查看收藏网址列表接口
+请求路径: https://www.wanandroid.com/lg/collect/usertools/json
+请求方式: GET
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'multipart/form-data;', 'cookie': 'JSESSIONID=8287DBD21115D5FB994FC1C5806E4755;'}
+请求内容: None
+接口响应内容: {"errorCode":-1001,"errorMsg":"请先登录！"}
+接口响应时长: 132 ms
+Http状态码: 200
+=====================================================
+INFO    2024-11-21 13:31:46,214C:\about git\pytest-auto-api2\logs\info-2024-11-21.log:log_decorator.py:42 
+======================================================
+用例标题: 正常登录
+请求路径: https://www.wanandroid.com/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '36', 'Content-Type': 'application/x-www-form-urlencoded'}
+请求内容: {'username': '18800000001', 'password': '123456'}
+接口响应内容: {"data":null,"errorCode":-1,"errorMsg":"账号密码不匹配！"}
+接口响应时长: 263 ms
+Http状态码: 200
+=====================================================
+INFO    2024-11-21 13:31:46,459C:\about git\pytest-auto-api2\logs\info-2024-11-21.log:log_decorator.py:42 
+======================================================
+用例标题: 输入错误的密码
+请求路径: https://www.wanandroid.com/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'multipart/form-data; boundary=dcbce161cba447719aeb8f9cd247e5d5', 'Content-Length': '232'}
+请求内容: {'username': '18800000001', 'password': '12345'}
+接口响应内容: {"data":null,"errorCode":-1,"errorMsg":"账号密码不匹配！"}
+接口响应时长: 225 ms
+Http状态码: 200
+=====================================================
+INFO    2024-11-21 13:31:46,693C:\about git\pytest-auto-api2\logs\info-2024-11-21.log:log_decorator.py:42 
+======================================================
+用例标题: 登录密码为空
+请求路径: https://www.wanandroid.com/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'multipart/form-data; boundary=effed48b4bf04930a23089e297142d06', 'Content-Length': '231'}
+请求内容: {'username': '18800000001', 'password': None}
+接口响应内容: {"data":null,"errorCode":-1,"errorMsg":"账号密码不匹配！"}
+接口响应时长: 218 ms
+Http状态码: 200
+=====================================================
+INFO    2024-11-21 13:31:46,916C:\about git\pytest-auto-api2\logs\info-2024-11-21.log:log_decorator.py:42 
+======================================================
+用例标题: 输入非1开头的手机号码
+请求路径: https://www.wanandroid.com/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'multipart/form-data; boundary=f9da0e53586f4b97a62eddde2fe63765', 'Content-Length': '232'}
+请求内容: {'username': '28800000001', 'password': '12345'}
+接口响应内容: {"data":null,"errorCode":-1,"errorMsg":"账号密码不匹配！"}
+接口响应时长: 213 ms
+Http状态码: 200
+=====================================================
+INFO    2024-11-21 13:31:47,136C:\about git\pytest-auto-api2\logs\info-2024-11-21.log:log_decorator.py:42 
+======================================================
+用例标题: 输入手机号码小于11位
+请求路径: https://www.wanandroid.com/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'multipart/form-data; boundary=81a6b6516dd448439fbe2261af888dc2', 'Content-Length': '231'}
+请求内容: {'username': '1880000000', 'password': '12345'}
+接口响应内容: {"data":null,"errorCode":-1,"errorMsg":"账号密码不匹配！"}
+接口响应时长: 207 ms
+Http状态码: 200
+=====================================================
+INFO    2024-11-21 13:31:47,365C:\about git\pytest-auto-api2\logs\info-2024-11-21.log:log_decorator.py:42 
+======================================================
+用例标题: 输入手机号码大于于11位
+请求路径: https://www.wanandroid.com/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'multipart/form-data; boundary=4d411fcd96dd468b9b94cbc59cc9e048', 'Content-Length': '232'}
+请求内容: {'username': '18800000000', 'password': '12345'}
+接口响应内容: {"data":null,"errorCode":-1,"errorMsg":"账号密码不匹配！"}
+接口响应时长: 216 ms
+Http状态码: 200
+=====================================================
+INFO    2024-11-21 13:31:47,605C:\about git\pytest-auto-api2\logs\info-2024-11-21.log:log_decorator.py:42 
+======================================================
+用例标题: 手机号码为空
+请求路径: https://www.wanandroid.com/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'multipart/form-data; boundary=3140505888be429ca0b2a30f9091a7a0', 'Content-Length': '225'}
+请求内容: {'username': None, 'password': '12345'}
+接口响应内容: {"data":null,"errorCode":-1,"errorMsg":"账号密码不匹配！"}
+接口响应时长: 226 ms
+Http状态码: 200
+=====================================================
+INFO    2024-11-21 13:31:47,831C:\about git\pytest-auto-api2\logs\info-2024-11-21.log:log_decorator.py:42 
+======================================================
+用例标题: 手机号码首位包含空格
+请求路径: https://www.wanandroid.com/user/login
+请求方式: POST
+请求头:   {'User-Agent': 'python-requests/2.26.0', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Type': 'multipart/form-data; boundary=1be99892fdc04c6a93f1c86b7303eb64', 'Content-Length': '234'}
+请求内容: {'username': ' 18867507063 ', 'password': '12345'}
+接口响应内容: {"data":null,"errorCode":-1,"errorMsg":"账号密码不匹配！"}
+接口响应时长: 217 ms
+Http状态码: 200
+=====================================================
+ERROR   2024-11-21 13:31:48,045C:\about git\pytest-auto-api2\logs\info-2024-11-21.log:conftest.py:115 用例总数: 15
+ERROR   2024-11-21 13:31:48,046C:\about git\pytest-auto-api2\logs\info-2024-11-21.log:conftest.py:116 异常用例数: 0
+INFO    2024-11-21 13:31:48,046C:\about git\pytest-auto-api2\logs\info-2024-11-21.log:conftest.py:119 用例执行时长: 5.83 s
+INFO    2024-11-21 13:31:48,047C:\about git\pytest-auto-api2\logs\info-2024-11-21.log:conftest.py:123 用例成功率: 53.33 %
