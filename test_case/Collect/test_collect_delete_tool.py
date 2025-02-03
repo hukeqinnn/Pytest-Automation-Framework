@@ -1,4 +1,3 @@
-
 import allure
 import pytest
 from utils.read_files_tools.get_yaml_data_analysis import GetTestCase

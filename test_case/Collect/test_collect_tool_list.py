@@ -1,8 +1,3 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-# @Time   : 2023-03-20 13:55:04
-
-
 import allure
 import pytest
 from utils.read_files_tools.get_yaml_data_analysis import GetTestCase
